@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +17,7 @@ namespace SumFunc
             int m1, m2;
             if (input.Length == 0)
             {
-                Console.WriteLine("Array is empty");
-                return -1;
+                throw new InvalidOperationException("Array is empty");
             }
             m1 = input[0];
             m2 = input[1];
@@ -37,3 +36,4 @@ namespace SumFunc
         }
     }
 }
+
