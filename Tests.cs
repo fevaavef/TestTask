@@ -31,7 +31,7 @@ namespace ThreeTestMethods
                 298815, -134432, 977892, -504113, -39959, 350042, 924676, 688286, -145484, 302951, 581063, -625195, -942474, 
                 -380914, -217358, 25675, -666575, 153506, -333397 });
             int expected = -1924599;
-            Assert.AreEqual(expected, res, 0.001, "Wrong result when array is empty");
+            Assert.AreEqual(expected, res, 0.001, "Wrong result");
         }
     }
 }
