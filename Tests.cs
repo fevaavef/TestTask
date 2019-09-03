@@ -48,5 +48,12 @@ namespace TestMethods
             int expected = -1;
             Assert.AreEqual(expected, res, 0.001, "Wrong result");
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestMethod6()
+        {
+            int res = FuncClass.Sum(null);
+        }
     }
 }
