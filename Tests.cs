@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SumFunc;
 
@@ -16,11 +16,10 @@ namespace ThreeTestMethods
         }
 
         [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void TestMethod2()
         {
             int res = FuncClass.Sum(new int[] { });
-            int expected = -1;
-            Assert.AreEqual(expected, res, 0.001, "Wrong result when array is empty");
         }
 
         [TestMethod]
